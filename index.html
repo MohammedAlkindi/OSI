@@ -3,24 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Oman Space Initiative bridges Omani students with the space sector through awareness, education, and hands-on experience." />
+  <meta name="theme-color" content="#08111f" />
+  <meta name="description" content="Oman Space Initiative builds practical pathways for Omani students into space science, engineering, research, and entrepreneurship." />
   <title>Oman Space Initiative</title>
+  <link rel="icon" href="./assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="./assets/favicon-32.png" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/osi-icon-192.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="Oman Space Initiative home">
-        <span class="brand-mark">OSI</span>
+        <img class="brand-mark" src="./assets/osi-icon-192.png" alt="" width="44" height="44" />
         <span class="brand-text">Oman Space Initiative</span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+      </button>
       <div class="nav-links" id="nav-links">
         <a href="#mission">Mission</a>
         <a href="#programs">Programs</a>
+        <a href="#founders">Team</a>
         <a href="#impact">Impact</a>
         <a href="#contact" class="nav-cta">Partner with OSI</a>
       </div>
@@ -29,32 +36,34 @@
 
   <main id="top">
     <section class="hero section">
+      <canvas class="starfield" aria-hidden="true"></canvas>
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Awareness · Education · Hands-on Experience</p>
-          <h1>Building clear pathways into Oman’s space future.</h1>
-          <p class="hero-lead">Oman Space Initiative is a youth-led platform helping Omani students understand, access, and contribute to the space sector through structured learning, practical exposure, and community-driven programs.</p>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Awareness / Education / Applied Experience</p>
+          <h1>Oman’s student gateway into the space sector.</h1>
+          <p class="hero-lead">OSI helps students move from curiosity to capability through workshops, mentorship, technical exposure, and public programs that make space careers feel concrete.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#programs">Explore programs</a>
             <a class="btn secondary" href="#contact">Start a partnership</a>
           </div>
           <div class="hero-stats" aria-label="Initiative highlights">
-            <div><strong>Oman</strong><span>Focused on national capability</span></div>
-            <div><strong>STEM</strong><span>Education and exploration</span></div>
-            <div><strong>Youth</strong><span>Built for emerging talent</span></div>
+            <div><strong data-count="3">0</strong><span>Core learning tracks</span></div>
+            <div><strong>STEM</strong><span>From classrooms to field work</span></div>
+            <div><strong>Youth</strong><span>Built around emerging talent</span></div>
           </div>
         </div>
-        <div class="hero-card" aria-label="Oman Space Initiative overview">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="planet"></div>
-          <div class="signal-card top-card">
-            <span>01</span>
-            <p>Awareness campaigns that make space careers visible.</p>
+        <div class="mission-control reveal" aria-label="Oman Space Initiative motion graphic">
+          <div class="radar-grid"></div>
+          <img class="hero-logo" src="./assets/osi-icon-512.png" alt="Oman Space Initiative mark" width="220" height="220" />
+          <div class="orbit orbit-one"><span></span></div>
+          <div class="orbit orbit-two"><span></span></div>
+          <div class="telemetry top-card">
+            <span>Live focus</span>
+            <p>Space literacy, student confidence, practical routes.</p>
           </div>
-          <div class="signal-card bottom-card">
-            <span>02</span>
-            <p>Workshops and practical programs for student engagement.</p>
+          <div class="telemetry bottom-card">
+            <span>Next vector</span>
+            <p>Schools, universities, founders, and sector partners.</p>
           </div>
         </div>
       </div>
@@ -62,12 +71,12 @@
 
     <section class="section intro" id="mission">
       <div class="container two-col">
-        <div>
+        <div class="reveal">
           <p class="eyebrow">Who we are</p>
-          <h2>An Omani initiative advancing space awareness and scientific ambition.</h2>
+          <h2>An Omani initiative turning space ambition into practical direction.</h2>
         </div>
-        <div class="copy-stack">
-          <p>OSI bridges the gap between Omani students and the country’s growing space sector. The initiative challenges the idea that space-related careers are abstract, distant, or inaccessible by creating practical routes into knowledge, mentorship, and applied experience.</p>
+        <div class="copy-stack reveal">
+          <p>OSI bridges the gap between students and Oman’s growing space ecosystem. We make the field easier to understand, easier to enter, and more exciting to build for.</p>
           <p class="arabic" lang="ar" dir="rtl">نحن مبادرة عُمانية تُعنى بتعزيز الوعي والمعرفة في مجال الفضاء والعلوم، من خلال مبادرات تعليمية وبرامج نوعية تمكّن الشباب وتغرس ثقافة الابتكار والاستكشاف.</p>
         </div>
       </div>
@@ -75,18 +84,18 @@
 
     <section class="section dark-section">
       <div class="container values-grid">
-        <article>
-          <span class="icon">✦</span>
+        <article class="reveal">
+          <span class="icon">01</span>
           <h3>Awareness</h3>
           <p>Make Oman’s space opportunities visible, understandable, and relevant to students at different stages.</p>
         </article>
-        <article>
-          <span class="icon">▣</span>
+        <article class="reveal">
+          <span class="icon">02</span>
           <h3>Education</h3>
           <p>Translate interest into structured learning through workshops, talks, resources, and guided exploration.</p>
         </article>
-        <article>
-          <span class="icon">↗</span>
+        <article class="reveal">
+          <span class="icon">03</span>
           <h3>Experience</h3>
           <p>Connect young people with practical projects, technical exposure, and leadership opportunities.</p>
         </article>
@@ -94,38 +103,57 @@
     </section>
 
     <section class="section" id="programs">
-      <div class="container section-heading">
+      <div class="container section-heading reveal">
         <p class="eyebrow">What we do</p>
         <h2>Programs designed to move students from curiosity to capability.</h2>
       </div>
       <div class="container program-grid">
-        <article class="program-card">
+        <article class="program-card reveal">
           <h3>Student Workshops</h3>
           <p>Interactive sessions covering space science, aerospace pathways, satellite systems, research exposure, and STEM foundations.</p>
         </article>
-        <article class="program-card">
+        <article class="program-card reveal">
           <h3>Awareness Campaigns</h3>
           <p>Public-facing educational content that makes space careers, institutions, and national opportunities easier to understand.</p>
         </article>
-        <article class="program-card">
+        <article class="program-card reveal">
           <h3>Mentorship & Guidance</h3>
           <p>Structured support connecting students with role models, academic pathways, and practical next steps.</p>
         </article>
-        <article class="program-card">
+        <article class="program-card reveal">
           <h3>Institutional Training</h3>
           <p>Custom sessions for schools, youth organizations, and partners seeking stronger STEM and space-sector engagement.</p>
         </article>
       </div>
     </section>
 
+    <section class="section founders" id="founders">
+      <div class="container section-heading reveal">
+        <p class="eyebrow">Leadership</p>
+        <h2>Built by students who want the next generation to see a clearer path.</h2>
+      </div>
+      <div class="container founder-grid">
+        <article class="founder-card reveal">
+          <span>Founder</span>
+          <h3>Omar Al Kharusi</h3>
+          <a href="mailto:kharusi.omar@gmail.com">kharusi.omar@gmail.com</a>
+        </article>
+        <article class="founder-card reveal">
+          <span>Co-founder</span>
+          <h3>Mohammed Al Kindi</h3>
+          <a href="mailto:alkindi.ceo@gmail.com">alkindi.ceo@gmail.com</a>
+        </article>
+      </div>
+    </section>
+
     <section class="section impact" id="impact">
       <div class="container impact-grid">
-        <div>
+        <div class="reveal">
           <p class="eyebrow">Why it matters</p>
           <h2>Oman needs more students who can see themselves inside the space economy.</h2>
           <p>Space is not only about astronauts. It includes engineering, software, data, policy, communications, design, entrepreneurship, and scientific research. OSI’s role is to make those pathways legible and actionable.</p>
         </div>
-        <div class="impact-list">
+        <div class="impact-list reveal">
           <div><span>01</span><p>Reduce the knowledge gap between students and real sector opportunities.</p></div>
           <div><span>02</span><p>Build early technical confidence through practical exposure.</p></div>
           <div><span>03</span><p>Strengthen Oman’s long-term STEM and innovation pipeline.</p></div>
@@ -134,14 +162,15 @@
     </section>
 
     <section class="section contact" id="contact">
-      <div class="container contact-card">
+      <div class="container contact-band reveal">
         <div>
           <p class="eyebrow">Partnerships</p>
           <h2>Work with Oman Space Initiative.</h2>
           <p>OSI collaborates with schools, universities, organizations, and sector partners to deliver educational consulting, corporate training, leadership development, and youth-focused space programs.</p>
         </div>
         <div class="contact-actions">
-          <a class="btn primary" href="mailto:contact@omanspaceinitiative.org">Contact OSI</a>
+          <a class="btn primary" href="mailto:kharusi.omar@gmail.com">Email the founder</a>
+          <a class="btn secondary" href="mailto:alkindi.ceo@gmail.com">Email co-founder</a>
           <a class="btn secondary" href="https://www.linkedin.com/company/oman-space-initiative/" target="_blank" rel="noreferrer">LinkedIn page</a>
         </div>
       </div>
@@ -155,6 +184,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

@@ -1,38 +1,51 @@
 # Oman Space Initiative Website
 
-A professional static website for Oman Space Initiative, a youth-led platform focused on strengthening Oman’s space-sector pipeline through awareness, education, and hands-on experience.
+A polished public website for Oman Space Initiative, a youth-led platform focused on strengthening Oman’s space-sector pipeline through awareness, education, and hands-on experience.
 
 ## Overview
 
-Oman Space Initiative bridges the gap between Omani students and the country’s growing space sector. The website presents OSI’s mission, programs, impact logic, and partnership channels in a clean public-facing format.
+The site presents OSI’s mission, programs, impact logic, leadership contacts, and partnership channels. It uses the OSI mark as the favicon/app icon and hero visual, with TypeScript-driven motion for the starfield, section reveals, mobile navigation, and lightweight stat animation.
 
-## Sections
+## Project Structure
 
-- Hero landing section
-- Mission and bilingual identity statement
-- Awareness, education, and experience pillars
-- Program offerings
-- Impact rationale
-- Partnership and contact call to action
+```text
+.
+├── public/
+│   └── assets/          # Favicons and OSI logo assets
+├── src/
+│   ├── main.ts          # Navigation, animation, reveal, and canvas behavior
+│   └── styles.css       # Responsive visual system
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
 
 ## Tech Stack
 
-- HTML
+- Vite
+- TypeScript
 - CSS
-- JavaScript
-- No build system required
+- HTML
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+The static production site is generated in `dist/`.
 
 ## Deployment
 
-This site is ready for GitHub Pages.
-
-1. Open the repository settings.
-2. Go to **Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose the `main` branch and `/root` folder.
-5. Save.
-
-GitHub Pages will publish the static site after the deployment finishes.
+For GitHub Pages, deploy the built `dist/` folder. The Vite config uses `base: './'` so the generated assets work on project pages such as `/OSI/`.
 
 ## Repository
 
